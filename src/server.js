@@ -2,7 +2,7 @@ const express = require('express');
 const server = express();
 const path = require('path')
 const pages = require('./pages')
-
+const port = process.env.PORT || 3000;
 server
 // utilizando os arquivos estáticos
 .use(express.static('public'))
@@ -21,4 +21,4 @@ server
 .get('/create-orphanage', pages.create_orphanages)
 .post('/save-orphanage', pages.save_orphanage)
 
-server.listen(5500, console.log(`servidor executando na porta 5500`));
+server.listen(port, console.log(`servidor executando na porta ${port}`));
