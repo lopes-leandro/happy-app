@@ -1,7 +1,7 @@
 ![Happy](https://user-images.githubusercontent.com/44936493/96325002-0c26a800-0ffb-11eb-878b-6aac8ef5dc6b.png)
 
 Aplicativo desenvolvido na semana do _Dia das Crianças_ promovido pela Aceleração NLW#3 da Rocketseat.
-Este app incrível tem como objetivo apresentar os orfanatos em um mapa principal, podendo ser visualizados com mais detalhes e possibilitando o cadastramento de novos orfanatos.
+Este app incrível tem como objetivo apresentar os orfanatos cadastrados em diverças regiões, possibilitando que os usuários possam conhecê-los e levar amor para crianças em situação de vulnerabilidade.
 
 [![](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=flat-square&logo=html5&logoColor=white)]()
 [![](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=flat-square&logo=css3&logoColor=white")]()
