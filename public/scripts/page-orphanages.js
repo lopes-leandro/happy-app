@@ -1,9 +1,16 @@
+const mapKey = process.env.KEY;
 // create map
 const map = L.map("mapid").setView([-23.659503, -46.761801], 15);
 
 // create and add titleLayer
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
-
+//L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+    maxZoom: 18,
+    id: 'mapbox/dark-v10',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'sk.eyJ1IjoibG9wZXMtbGVhbmRybyIsImEiOiJja2dkN3BnZ2cwY3cwMnFxZjIwYjlkOGFoIn0.NfL0mYq3HUhFo_tZcDp2lQ'
+}).addTo(map);
 // create icon
 const icon = L.icon({
   iconUrl: "/images/map-marker.svg",
@@ -22,7 +29,8 @@ function addMarker({ id, name, lat, lng }) {
   }).setContent(
     `${name} <a href="orphanage?id=${id}" class="choose-orphanage">
     <img src="/images/arrow-white.svg">
-    </a>`);
+    </a>`
+  );
 
   // create and add marker
   L.marker([lat, lng], { icon }).addTo(map).bindPopup(popup);
