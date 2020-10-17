@@ -1,4 +1,3 @@
-const mapKey = process.env.KEY;
 // create map
 const map = L.map("mapid").setView([-23.659503, -46.761801], 15);
 
