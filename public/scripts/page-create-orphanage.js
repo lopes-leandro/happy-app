@@ -21,6 +21,10 @@ map.on("click", (event) => {
   document.querySelector("[name=lat]").value = lat;
   document.querySelector("[name=lng]").value = lng;
 
+  // aplica a classe valid
+  document.querySelector(".map-container").classList.remove('invalid');
+  document.querySelector(".map-container").classList.add('valid');
+
   // remover icon
   marker && map.removeLayer(marker);
 
@@ -86,4 +90,16 @@ function toggleSelect(event) {
   
   // verificar se é sim ou não
   input.value = button.dataset.value;
+}
+
+function validate(event) {
+  const form = event.currentTarget;
+  const lat = form.querySelector("[name=lat]").value;
+  
+  // validar se lat e lng está vazio  
+  if (lat == null || lat == undefined || lat == "") {
+    event.preventDefault();
+    document.querySelector(".map-container").classList.add('invalid');
+    window.scrollTo(0,0);   
+  }
 }

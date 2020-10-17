@@ -12,6 +12,7 @@
   align-items: center;
   justify-content: center;
   transition: background .2s;
+  text-decoration: none;
 }
 
 .primary-button:hover{
