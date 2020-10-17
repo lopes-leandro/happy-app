@@ -7,6 +7,9 @@ server
 // utilizando os arquivos estáticos
 .use(express.static('public'))
 
+// utilizar body da request
+.use(express.urlencoded({extended: true}))
+
 // configurar template engine
 .set('views', path.join(__dirname, "views"))
 .set('view engine', 'hbs')
@@ -16,5 +19,6 @@ server
 .get('/orphanages', pages.orphanages)
 .get('/orphanage', pages.orphanage)
 .get('/create-orphanage', pages.create_orphanages)
+.post('/save-orphanage', pages.save_orphanage)
 
 server.listen(5500, console.log(`servidor executando na porta 5500`));

@@ -10,6 +10,14 @@ main {
   margin: 0 0 4rem;
 }
 
+.map-container.valid {
+  border: 1px solid #a1e9c5;
+}
+
+.map-container.invalid {
+  border: 1px solid #ffbcd4;
+}
+
 .map-container .leaflet-container {
   border-radius: 20px 20px 0 0;
 }
