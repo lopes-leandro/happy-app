@@ -8,4 +8,4 @@ RUN npm install
 
 EXPOSE 5500
 
-ENTRYPOINT [ "node", "src/server.js" ]
+ENTRYPOINT [ "npm", "start" ]
