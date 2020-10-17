@@ -3,6 +3,14 @@
 Aplicativo desenvolvido na semana do _Dia das Crianças_ promovido pela Aceleração NLW#3 da Rocketseat.
 Este app incrível tem como objetivo apresentar os orfanatos em um mapa principal, podendo ser visualizados com mais detalhes e possibilitando o cadastramento de novos orfanatos.
 
+[![](https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=flat-square&logo=html5&logoColor=white)]()
+[![](https://img.shields.io/badge/css3%20-%231572B6.svg?&style=flat-square&logo=css3&logoColor=white")]()
+[![](https://img.shields.io/badge/javascript%20-%23323330.svg?&style=flat-square&logo=javascript&logoColor=%23F7DF1E)]()
+[![](https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=flat-square&logo=node.js&logoColor=white)]()
+[![](https://img.shields.io/badge/mapbox-0078D4.svg?&style=flat-square&logo=mapbox&logoColor=white)]()
+[![](https://img.shields.io/badge/docker-2496ED.svg?&style=flat-square&logo=docker&logoColor=white)]()
+[![](https://img.shields.io/badge/sqlite-003B57.svg?&style=flat-square&logo=sqlite&logoColor=white)]()
+
 ## Mapa Principal
 ![Mapa Principal](https://user-images.githubusercontent.com/44936493/96325235-958aaa00-0ffc-11eb-83f7-dc79ad0db02f.png)
 
@@ -48,6 +56,9 @@ https://hub.docker.com/repository/docker/lopez12/happy-app/general
 ### Referências
 Criar imagem com Docker:
 https://dev.to/azure/desenvolvendo-aplicacao-node-js-express-js-com-docker-2e7a
+
+Enviando sua imagem para Docker Hub:
+https://medium.com/trainingcenter/docker-dockerhub-pull-e-push-nas-suas-imagens-57dffa0232ad
 
 Apresentando o Mapbox:
 https://www.youtube.com/watch?v=hGIk0ZUKnAc
