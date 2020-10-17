@@ -35,6 +35,22 @@ ENTRYPOINT [ "npm", "start" ]
 
 Se tudo ocorreu tudo bem, você pode acessar seu projeto no browser através do ```localhost:5500```
 
+## Meu repositório no Docker Hub
+
+https://hub.docker.com/repository/docker/lopez12/happy-app/general
+
+![Docker Hub](https://user-images.githubusercontent.com/44936493/96329317-20ca6680-1022-11eb-8e41-684c46d50929.png)
+
 #### Testes com Docker Localmente
 ```sudo docker build -t happy-app:latest .```
+
 ```sudo docker run -d -p 5500:5500 happy-app```
+### Referências
+Criar imagem com Docker:
+https://dev.to/azure/desenvolvendo-aplicacao-node-js-express-js-com-docker-2e7a
+
+Apresentando o Mapbox:
+https://www.youtube.com/watch?v=hGIk0ZUKnAc
+
+Leaflet:
+https://leafletjs.com/examples/quick-start/
