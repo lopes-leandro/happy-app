@@ -34,3 +34,7 @@ ENTRYPOINT [ "npm", "start" ]
 4. Execute no seu terminal o comando ```docker docker run -d -p 5500:5500 <nome-do-seu-projeto>```
 
 Se tudo ocorreu tudo bem, você pode acessar seu projeto no browser através do ```localhost:5500```
+
+#### Testes com Docker Localmente
+```sudo docker build -t happy-app:latest .```
+```sudo docker run -d -p 5500:5500 happy-app```
